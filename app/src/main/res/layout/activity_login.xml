@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:background="#DBDDBF"
+    android:padding="15dp"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/txt"
+        android:text="login"
+        android:textColor="#E91E63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="80dp"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/user2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="Password"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lgn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btin_lgn"
+        android:layout_marginTop="25dp"
+        android:text="Login"/>
+
+
+</LinearLayout>

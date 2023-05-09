@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:background="#DBDDBF"
+    android:padding="20dp"
+    tools:context=".Registor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="60dp"
+        android:text="Student Register"
+        android:textColor="#596F71"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="Name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/roll"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Roll number"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Section :"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+        <Spinner
+            android:id="@+id/spnSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/sec"/>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:hint="Password"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rtr3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rtr"
+        android:elevation="10dp"
+        android:text="Register"/>
+
+</LinearLayout>

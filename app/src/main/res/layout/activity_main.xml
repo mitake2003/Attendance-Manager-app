@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:background="#DBDDBF"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/study"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Teacher"
+        android:textColor="#D64646"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:columnCount="2">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/lgn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btin_lgn"
+            android:elevation="5dp"
+            android:layout_margin="9dp"
+            android:text="login"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rtr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btin_lgn"
+            android:elevation="5dp"
+            android:layout_margin="9dp"
+            android:text="Register"/>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Student"
+        android:textColor="#C33C3C"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/lgn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btin_lgn"
+            android:elevation="5dp"
+            android:layout_margin="9dp"
+            android:text="login"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rtr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btin_lgn"
+            android:elevation="5dp"
+            android:layout_margin="9dp"
+            android:text="Register"/>
+    </GridLayout>
+
+
+
+</LinearLayout>
